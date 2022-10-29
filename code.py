@@ -2,7 +2,10 @@ import network
 import socket
 import time
 from machine import Pin
-import uasyncio as asyncio
+
+## Codigo que utiliza la Pico W como servidor y despliega una pagina, la cual da la habilidad de apagar y prender el LED de la pico
+## Codigo adaptado de https://www.tomshardware.com/how-to/raspberry-pi-pico-w-web-server
+
 
 intled = Pin("LED", Pin.OUT)
 
